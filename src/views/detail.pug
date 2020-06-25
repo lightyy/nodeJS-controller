@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        link(rel="shortcut icon" href="#")
+        title #{title} | #{siteName}
+    body
+        main
+            h1 #{title}
+
+            p Year : #{year}   ,   Rating : #{rating}
+            p #{description}
+            ul
+                each genre in genres
+                    li  #{genre}
+

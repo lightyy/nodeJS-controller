@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        link(rel="shortcut icon" href="#")
+        title #{title} | #{siteName}
+    body
+        main
+        h1 #{title}
+        each movie in movies
+            a(href=movie.id)
+                h2 #{movie.title}
